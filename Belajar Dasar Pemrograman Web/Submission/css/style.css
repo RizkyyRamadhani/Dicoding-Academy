@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    padding: 10px 100px;
+    top: 0;
+    position: fixed;
+   }
+   
+header.navbar-container .logo img {
+    width: 150px;
+}
+header.navbar-container .navbar{
+   margin-left: auto;
+   
+}
+
+header.navbar-container .navbar ul {
+    display: flex;
+    gap: 80px;
+}
+
+header.navbar-container p {
+    font-size:large;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+header.navbar-container p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+header.navbar-container .navbar li {
+    list-style-type: none;
+}
+
+header.navbar-container .navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    padding: 8px;
+    border-radius: 999px;
+    transition: all 0.5s ease-out;
+}
+
+header.navbar-container .navbar li a:hover,
+a:focus {
+background-color: grey;
+}
+#content {
+    flex: 5;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+    }
+
+main {
+    margin-inline: auto;
+    padding: 4rem;
+  }
+
+main .beranda {
+    width: 80%;
+    margin-inline: auto;
+    padding: 4rem;
+    flex: 1;
+    display: flex;
+    }
+    
+
+main .beranda .article-1 {
+flex: 1 1;
+}
+
+main .beranda  .article-1 .judul {
+font-size: 3rem;
+margin-block: 1rem;
+}
+
+main .beranda .article-1 p {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+main .beranda .article-1 button {
+    background-color: grey;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    
+}
+main .beranda .article-1 button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+main .beranda .image {
+    flex: 1;
+    display: flex;
+  }
+
+  main .beranda  .image img {
+    margin: auto;
+     width: auto;
+  }
+
+  main .kategori {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+  }
+main .kategori .article-2 {
+    flex: 1;
+}
+
+main .kategori .article-2 .judul2 {
+    text-align: center;
+}
+
+  main .kategori .article-2 ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+main .kategori .article-2 li {
+    list-style-type: none;
+    text-align: center;
+}
+
+main .kategori .article-2 li a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 999px;
+    transition: all 0.5s ease-out;
+    display: flex; 
+
+}
+
+main .kategori .article-2 li a:hover,
+a:focus {
+background-color: grey;
+color: white;
+}
+main .faq {
+    width: 80%;
+    margin-top: 100px;
+}
+
+main .faq .article-3 {
+    flex: 1;
+}
+
+main .faq .article-3 .judul3 {
+    text-align: center;
+}
+
+main .faq .article-3 button{
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+main .faq .article-3 button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.card {
+    width: 100%;
+    box-shadow: 0 2px 8px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    padding: 10px;
+    justify-content: center;
+    margin: auto;
+    }
+
+aside .profile {
+    background-color:grey;
+    position: fixed;
+    top:30%;
+    right: -16%;
+    padding: 20px;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius: 5px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: .5s;
+   
+}
+
+.profile .dataku {
+    margin: auto;
+    padding: 10px;
+}
+.profile .dataku img{
+    width: 50%;
+    
+}
+.profile .dataku p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile:hover {
+right: 0;
+}
+
+footer 
+{
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+}
